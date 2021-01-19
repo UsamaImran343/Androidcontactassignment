@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Information"
+            android:textAlignment="center"
+            android:shadowRadius="@android:integer/config_longAnimTime"
+            android:textSize="29sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="9dp"
+            android:background="#F47148"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Number"
+            android:inputType="number"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginBottom="9dp"
+            android:backgroundTint="#FFC107"
+            android:textSize="20sp"
+
+            />
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name"
+            android:layout_marginBottom="9dp"
+            android:backgroundTint="#FFC107"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+
+            />
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email (Optional)"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:layout_marginBottom="9dp"
+            android:backgroundTint="#FFC107"
+
+            />
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="49dp"
+            android:src="@drawable/defaulty"
+            android:background="@drawable/button"
+            />
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Add Image (Optional)"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/button"
+
+
+            />
+
+        <Button
+            android:id="@+id/savebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Save"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:background="@drawable/button"
+
+            />
+
+
+<!--        <Button-->
+<!--            android:id="@+id/savebtn"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:padding="2dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/button"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Save"-->
+<!--            android:textAllCaps="true"-->
+<!--            android:textColor="@android:color/white" />-->
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
